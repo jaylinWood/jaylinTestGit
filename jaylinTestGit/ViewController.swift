@@ -9,19 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var gerardoLab: UILabel!
     
     @IBOutlet weak var testText: UITextField!
     @IBOutlet weak var testImg: UIImageView!
+    
+    var state = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func gerardoButtonTapped(_ sender: UIButton) {
-        gerardoLab.text = "gerardo was here"
+    
     @IBAction func testBut(_ sender: UIButton) {
+        if state == true {
+            testText.text = "Gerardo was here"
+        } else {
+            testText.text = "Somebody else was here"
+        }
+        state = !state
     }
     
 }
