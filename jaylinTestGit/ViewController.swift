@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var testText: UITextField!
+    @IBOutlet weak var testImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func testBut(_ sender: UIButton) {
+    }
+    
 
 }
 
