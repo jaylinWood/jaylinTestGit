@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var gerardoLab: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func gerardoButtonTapped(_ sender: UIButton) {
+        gerardoLab.text = "gerardo was here"
+    }
+    
 }
 
